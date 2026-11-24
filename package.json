@@ -1,0 +1,15 @@
+{
+  "name": "traceable-stv-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "虚构排序选票的精确分数可追查 STV 计数、并列分支与审计导出系统",
+  "scripts": {
+    "start": "node server.mjs",
+    "export:examples": "node scripts/generate-examples.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,13 @@
+﻿round,flow_id,kind,from_id,from_name,to_id,to_name,ratio_exact,flow_amount_exact,ballot_id,entry_amount_exact,raw_preferences,effective_preference_ids
+1,r1-flow-1,initial,,EXHAUSTED,c1,阿明,1,4,T01,1,T01: 阿明 > 陈清,c1>c3
+1,r1-flow-1,initial,,EXHAUSTED,c1,阿明,1,4,T02,1,T02: 阿明 > 陈清,c1>c3
+1,r1-flow-1,initial,,EXHAUSTED,c1,阿明,1,4,T03,1,T03: 阿明 > 陈清,c1>c3
+1,r1-flow-1,initial,,EXHAUSTED,c1,阿明,1,4,T04,1,T04: 阿明 > 陈清,c1>c3
+1,r1-flow-2,initial,,EXHAUSTED,c2,白岚,1,2,T05,1,T05: 白岚 > 陈清 > 多瑙,c2>c3>c4
+1,r1-flow-2,initial,,EXHAUSTED,c2,白岚,1,2,T06,1,T06: 白岚 > 陈清 > 多瑙,c2>c3>c4
+1,r1-flow-3,initial,,EXHAUSTED,c3,陈清,1,2,T07,1,T07: 陈清 > 白岚 > 多瑙,c3>c2>c4
+1,r1-flow-3,initial,,EXHAUSTED,c3,陈清,1,2,T08,1,T08: 陈清 > 白岚 > 多瑙,c3>c2>c4
+1,r1-flow-4,initial,,EXHAUSTED,c4,多瑙,1,2,T09,1,T09: 多瑙,c4
+1,r1-flow-4,initial,,EXHAUSTED,c4,多瑙,1,2,T10,1,T10: 多瑙,c4
+2,r2-flow-5,elimination,c2,白岚,c3,陈清,1,2,T05,1,T05: 白岚 > 陈清 > 多瑙,c2>c3>c4
+2,r2-flow-5,elimination,c2,白岚,c3,陈清,1,2,T06,1,T06: 白岚 > 陈清 > 多瑙,c2>c3>c4

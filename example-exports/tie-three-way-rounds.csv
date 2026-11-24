@@ -1,0 +1,13 @@
+﻿round,round_kind,candidate_id,candidate_name,status_at_round_end,tally_start_exact,tally_end_exact,elected_this_round,eliminated_this_round,quota_exact,candidate_held,exhausted,total_counted,conservation_balanced,tie_key,tie_selected
+1,election,c1,阿明,elected,4,4,yes,,4,10,0,10,yes,,
+1,election,c2,白岚,continuing,2,2,,,4,10,0,10,yes,,
+1,election,c3,陈清,continuing,2,2,,,4,10,0,10,yes,,
+1,election,c4,多瑙,continuing,2,2,,,4,10,0,10,yes,,
+2,elimination,c1,阿明,elected,4,4,,,4,10,0,10,yes,r2-elimination-minimum-c2_c3_c4,c2
+2,elimination,c2,白岚,eliminated,2,0,,yes,4,10,0,10,yes,r2-elimination-minimum-c2_c3_c4,c2
+2,elimination,c3,陈清,continuing,2,4,,,4,10,0,10,yes,r2-elimination-minimum-c2_c3_c4,c2
+2,elimination,c4,多瑙,continuing,2,2,,,4,10,0,10,yes,r2-elimination-minimum-c2_c3_c4,c2
+3,election,c1,阿明,elected,4,4,,,4,10,0,10,yes,,
+3,election,c2,白岚,eliminated,0,0,,,4,10,0,10,yes,,
+3,election,c3,陈清,elected,4,4,yes,,4,10,0,10,yes,,
+3,election,c4,多瑙,continuing,2,2,,,4,10,0,10,yes,,

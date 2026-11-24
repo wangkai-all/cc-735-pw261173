@@ -1,0 +1,12 @@
+﻿round,flow_id,kind,from_id,from_name,to_id,to_name,ratio_exact,flow_amount_exact,ballot_id,entry_amount_exact,raw_preferences,effective_preference_ids
+1,r1-flow-1,initial,,EXHAUSTED,,EXHAUSTED,1,4,N01,1,N01:,
+1,r1-flow-1,initial,,EXHAUSTED,,EXHAUSTED,1,4,N02,1,N02: .,
+1,r1-flow-1,initial,,EXHAUSTED,,EXHAUSTED,1,4,N03,1,N03: 火星 > 虚空,
+1,r1-flow-1,initial,,EXHAUSTED,,EXHAUSTED,1,4,N04,1,N04: 空白 > 无效候选,
+1,r1-flow-2,initial,,EXHAUSTED,c1,沈一,1,2,N05,1,N05: 沈一 > 韩二,c1>c2
+1,r1-flow-2,initial,,EXHAUSTED,c1,沈一,1,2,N06,1,N06: 沈一 > 韩二,c1>c2
+1,r1-flow-3,initial,,EXHAUSTED,c2,韩二,1,3,N07,1,N07: 韩二 > 沈一,c2>c1
+1,r1-flow-3,initial,,EXHAUSTED,c2,韩二,1,3,N08,1,N08: 韩二 > 沈一,c2>c1
+1,r1-flow-3,initial,,EXHAUSTED,c2,韩二,1,3,N09,1,N09: 韩二 > 周三,c2>c3
+1,r1-flow-4,initial,,EXHAUSTED,c3,周三,1,1,N10,1,N10: 周三 > 沈一,c3>c1
+2,r2-flow-5,elimination,c3,周三,c1,沈一,1,1,N10,1,N10: 周三 > 沈一,c3>c1

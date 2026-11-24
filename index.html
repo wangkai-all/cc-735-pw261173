@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>可追查排序选票计数分析系统</title>
+    <meta name="description" content="虚构 STV 排序选票的精确分数计数、并列分支、撤票影响、守恒审计与原票追溯。" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">票</div>
+        <div>
+          <h1>可追查排序选票计数分析系统</h1>
+          <p>全部候选人、选票与事件均为虚构；不连接任何真实选举服务。</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span id="globalStatus" class="badge neutral">尚未计数</span>
+        <button class="btn" data-action="run">重新计数并逐票对照</button>
+        <button class="btn primary" data-action="confirm-report">确认并固化报告</button>
+      </div>
+    </header>
+
+    <main class="shell">
+      <nav class="tabs" role="tablist" aria-label="工作台分区">
+        <button class="tab active" role="tab" data-tab="setup">① 配置与选票</button>
+        <button class="tab" role="tab" data-tab="count">② 逐轮计数与并列分支</button>
+        <button class="tab" role="tab" data-tab="trace">③ 候选人 / 原票追溯</button>
+        <button class="tab" role="tab" data-tab="reports">④ 校验报告与导出</button>
+      </nav>
+
+      <section class="panel active" data-panel="setup">
+        <div class="grid setup-grid">
+          <section class="card span-5">
+            <div class="card-head">
+              <h2>网页配置</h2>
+              <p>候选人每行一个；席位、选票处理顺序、重复候选和并列规则均在此配置。</p>
+            </div>
+
+            <div class="sample-box">
+              <label class="field-label" for="sampleSelect">载入内置样例</label>
+              <div class="sample-row">
+                <select id="sampleSelect" aria-label="选择内置样例"></select>
+                <button class="btn" data-action="load-sample">载入</button>
+              </div>
+              <p id="sampleDescription" class="muted small"></p>
+              <div class="sample-quick" id="sampleQuick"></div>
+            </div>
+
+            <div class="form-grid">
+              <label class="field span-2">
+                <span>项目 / 计数名称</span>
+                <input id="titleInput" type="text" />
+              </label>
+              <label class="field">
+                <span>应选席位</span>
+                <input id="seatsInput" type="number" min="1" max="99" step="1" />
+              </label>
+              <label class="field">
+                <span>选票处理顺序</span>
+                <select id="ballotOrderInput">
+                  <option value="input">按文本输入顺序</option>
+                  <option value="id">按选票编号自然排序</option>
+                  <option value="reverse">输入顺序倒序</option>
+                  <option value="seeded">可复现种子散列顺序</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>并列默认处置规则</span>
+                <select id="tiePolicyInput">
+                  <option value="manual">每次询问，并保存裁决分支</option>
+                  <option value="candidate-order">按候选人名单顺序</option>
+                  <option value="seeded">按种子哈希可复现抽签</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>重复候选偏好</span>
+                <select id="duplicateInput">
+                  <option value="first">保留第一次出现，忽略后续重复</option>
+                  <option value="invalid-ballot">出现重复则整张票无有效偏好</option>
+                </select>
+              </label>
+              <label class="field span-2">
+                <span>并列 / 排序种子</span>
+                <input id="seedInput" type="text" placeholder="tieSeed / orderSeed" />
+              </label>
+            </div>
+
+            <label class="field">
+              <span>候选人名单（每行一个；也支持 <code>id|名称</code>）</span>
+              <textarea id="candidateText" class="code-area" rows="6" spellcheck="false"></textarea>
+            </label>
+
+            <label class="field">
+              <span>排序选票文本（可写 <code>B001: 甲 &gt; 乙 &gt; 丙</code>；<code>B009:</code> 表示显式空票）</span>
+              <textarea id="ballotText" class="code-area ballot-area" rows="14" spellcheck="false"></textarea>
+            </label>
+
+            <div class="action-row">
+              <button class="btn primary" data-action="run">应用配置并计数</button>
+              <button class="btn" data-action="reset-draft">恢复上次已保存输入</button>
+              <span id="saveState" class="muted small"></span>
+            </div>
+          </section>
+
+          <div class="span-7 stack">
+            <section class="card">
+              <div class="card-head row-between">
+                <div>
+                  <h2>解析与校验</h2>
+                  <p>未知候选会跳过；重复、空偏好和编号问题都会保留在这里。</p>
+                </div>
+                <div id="parseStats" class="stat-chips"></div>
+              </div>
+              <div id="issuesPanel" class="issues"></div>
+            </section>
+
+            <section class="card">
+              <div class="card-head row-between">
+                <div>
+                  <h2>选票清单与争议处置</h2>
+                  <p>标记争议不会改变计数；撤销会排除该票并做最早受影响轮次分析。所有状态保存在本机浏览器。</p>
+                </div>
+                <div class="table-tools">
+                  <input id="ballotSearch" class="search" type="search" placeholder="搜索编号 / 偏好" />
+                </div>
+              </div>
+              <div id="ballotTableWrap" class="table-wrap ballot-table-wrap"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" data-panel="count">
+        <div id="summaryCards" class="summary-grid"></div>
+        <div id="impactBanner"></div>
+        <div class="grid count-grid">
+          <section class="card span-4" id="branchPanel"></section>
+          <section class="card span-8">
+            <div class="card-head">
+              <h2>逐轮计票、转移与守恒</h2>
+              <p>所有票值均显示精确分数；小数仅作阅读提示，淘汰与当选只比较分数。</p>
+            </div>
+            <div id="roundsContainer" class="rounds"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="panel" data-panel="trace">
+        <section class="card">
+          <div class="card-head row-between">
+            <div>
+              <h2>候选人追溯入口</h2>
+              <p>点击候选人按钮，查看哪些原票通过首轮分配、余额转移或淘汰转移改变了其票值。</p>
+            </div>
+            <input id="traceBallotFilter" class="search" type="search" placeholder="在追溯中筛选原票编号" />
+          </div>
+          <div id="candidateTraceGrid" class="candidate-grid"></div>
+        </section>
+        <section id="traceDetail" class="card trace-detail"></section>
+      </section>
+
+      <section class="panel" data-panel="reports">
+        <div class="grid">
+          <section class="card">
+            <div class="card-head">
+              <h2>当前真实结果的导出文件</h2>
+              <p>争议分支、逐票解释器对照、校验和与报告均使用同一次精确计数结果。</p>
+              <p class="checksum" style="margin-top:.55rem">当前结果 SHA-256：<code data-current-checksum>计算中…</code></p>
+            </div>
+            <div class="export-grid">
+              <button class="export-tile" data-action="export-audit">
+                <strong>完整审计 JSON</strong>
+                <span>输入快照、分支决策、逐轮分数、票批流向、原票分录、守恒和 SHA-256。</span>
+              </button>
+              <button class="export-tile" data-action="export-rounds-csv">
+                <strong>逐轮计票 CSV</strong>
+                <span>每轮 × 每位候选人的轮初/轮末精确票值、状态、守恒和 tie key。</span>
+              </button>
+              <button class="export-tile" data-action="export-flows-csv">
+                <strong>票流原票分录 CSV</strong>
+                <span>每张原票在每一批流向中的精确金额、比例、来源和目标。</span>
+              </button>
+              <button class="export-tile" data-action="export-markdown">
+                <strong>Markdown 报告</strong>
+                <span>算法说明、逐轮表格、守恒关系、分支与校验和，便于归档。</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="card-head row-between">
+              <div>
+                <h2>已确认旧报告（本机不可变快照）</h2>
+                <p>确认时保存输入、选票状态、分支决策和结果校验和；之后撤票或改配置不会改写旧报告。</p>
+              </div>
+              <div class="table-tools">
+                <label class="btn small" for="importReportInput">导入报告 JSON 复现</label>
+                <input id="importReportInput" type="file" accept=".json,application/json" hidden />
+                <button class="btn" data-action="run-all-parity">重新运行小规模对照</button>
+              </div>
+            </div>
+            <div id="reportsList" class="reports-list"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1197 @@
+{
+  "schema": "traceable-stv-audit-export-v1",
+  "exportedAt": "2026-11-24T18:52:20.097Z",
+  "title": "样例 C：无有效偏好与耗尽票",
+  "algorithm": {
+    "name": "精确分数加权包容 Gregory 可转移票算法",
+    "version": "wig-stv-exact-v1",
+    "quota": "Droop exact integer: floor(formalValue/(seats+1))+1",
+    "transfer": "Weighted inclusive Gregory (WIG), exact BigInt fractions",
+    "tie": "candidate-order"
+  },
+  "checksum": {
+    "resultSha256": "df150cc0ce31b4d603b710181bcc5b02adbf6fab621249b038f113417906b0da",
+    "confirmedReportChecksum": null,
+    "auditSha256": "7692f5c6bb55d91810e8999bf4f6c72be1abd7963908db39a3e44efd3fe1b961"
+  },
+  "branch": {
+    "id": "example-branch",
+    "name": "基线",
+    "decisions": {}
+  },
+  "branches": [
+    {
+      "id": "example-branch",
+      "name": "基线",
+      "decisions": {}
+    }
+  ],
+  "impact": null,
+  "verification": {
+    "ran": true,
+    "matched": true,
+    "conservationOk": true,
+    "reason": null,
+    "differenceCount": 0,
+    "differences": []
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "unknown_preference",
+      "ballotId": "N03",
+      "message": "N03 有无法识别的候选：火星、虚空"
+    },
+    {
+      "severity": "warning",
+      "code": "unknown_preference",
+      "ballotId": "N04",
+      "message": "N04 有无法识别的候选：空白、无效候选"
+    }
+  ],
+  "stats": {
+    "ballotCount": 10,
+    "activeCount": 10,
+    "rescindedCount": 0,
+    "validCount": 6,
+    "noValidCount": 4,
+    "candidateCount": 3
+  },
+  "input": {
+    "schemaVersion": "traceable-stv-input-v1",
+    "algorithmVersion": "wig-stv-exact-v1",
+    "algorithmName": "精确分数加权包容 Gregory 可转移票算法",
+    "title": "样例 C：无有效偏好与耗尽票",
+    "seats": 2,
+    "candidates": [
+      {
+        "id": "c1",
+        "name": "沈一",
+        "lineNo": 1
+      },
+      {
+        "id": "c2",
+        "name": "韩二",
+        "lineNo": 2
+      },
+      {
+        "id": "c3",
+        "name": "周三",
+        "lineNo": 3
+      }
+    ],
+    "ballots": [
+      {
+        "id": "N01",
+        "row": 1,
+        "lineNo": 1,
+        "rawText": "N01:",
+        "statedId": true,
+        "rawPreferences": [],
+        "preferences": [],
+        "normalizedPreferences": [],
+        "duplicateRefs": [],
+        "unknownRefs": [],
+        "duplicateInvalidated": false,
+        "valid": false,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      },
+      {
+        "id": "N02",
+        "row": 2,
+        "lineNo": 2,
+        "rawText": "N02: .",
+        "statedId": true,
+        "rawPreferences": [],
+        "preferences": [],
+        "normalizedPreferences": [],
+        "duplicateRefs": [],
+        "unknownRefs": [],
+        "duplicateInvalidated": false,
+        "valid": false,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      },
+      {
+        "id": "N03",
+        "row": 3,
+        "lineNo": 3,
+        "rawText": "N03: 火星 > 虚空",
+        "statedId": true,
+        "rawPreferences": [
+          "火星",
+          "虚空"
+        ],
+        "preferences": [],
+        "normalizedPreferences": [],
+        "duplicateRefs": [],
+        "unknownRefs": [
+          "火星",
+          "虚空"
+        ],
+        "duplicateInvalidated": false,
+        "valid": false,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      },
+      {
+        "id": "N04",
+        "row": 4,
+        "lineNo": 4,
+        "rawText": "N04: 空白 > 无效候选",
+        "statedId": true,
+        "rawPreferences": [
+          "空白",
+          "无效候选"
+        ],
+        "preferences": [],
+        "normalizedPreferences": [],
+        "duplicateRefs": [],
+        "unknownRefs": [
+          "空白",
+          "无效候选"
+        ],
+        "duplicateInvalidated": false,
+        "valid": false,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      },
+      {
+        "id": "N05",
+        "row": 5,
+        "lineNo": 5,
+        "rawText": "N05: 沈一 > 韩二",
+        "statedId": true,
+        "rawPreferences": [
+          "沈一",
+          "韩二"
+        ],
+        "preferences": [
+          "c1",
+          "c2"
+        ],
+        "normalizedPreferences": [
+          "c1",
+          "c2"
+        ],
+        "duplicateRefs": [],
+        "unknownRefs": [],
+        "duplicateInvalidated": false,
+        "valid": true,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      },
+      {
+        "id": "N06",
+        "row": 6,
+        "lineNo": 6,
+        "rawText": "N06: 沈一 > 韩二",
+        "statedId": true,
+        "rawPreferences": [
+          "沈一",
+          "韩二"
+        ],
+        "preferences": [
+          "c1",
+          "c2"
+        ],
+        "normalizedPreferences": [
+          "c1",
+          "c2"
+        ],
+        "duplicateRefs": [],
+        "unknownRefs": [],
+        "duplicateInvalidated": false,
+        "valid": true,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      },
+      {
+        "id": "N07",
+        "row": 7,
+        "lineNo": 7,
+        "rawText": "N07: 韩二 > 沈一",
+        "statedId": true,
+        "rawPreferences": [
+          "韩二",
+          "沈一"
+        ],
+        "preferences": [
+          "c2",
+          "c1"
+        ],
+        "normalizedPreferences": [
+          "c2",
+          "c1"
+        ],
+        "duplicateRefs": [],
+        "unknownRefs": [],
+        "duplicateInvalidated": false,
+        "valid": true,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      },
+      {
+        "id": "N08",
+        "row": 8,
+        "lineNo": 8,
+        "rawText": "N08: 韩二 > 沈一",
+        "statedId": true,
+        "rawPreferences": [
+          "韩二",
+          "沈一"
+        ],
+        "preferences": [
+          "c2",
+          "c1"
+        ],
+        "normalizedPreferences": [
+          "c2",
+          "c1"
+        ],
+        "duplicateRefs": [],
+        "unknownRefs": [],
+        "duplicateInvalidated": false,
+        "valid": true,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      },
+      {
+        "id": "N09",
+        "row": 9,
+        "lineNo": 9,
+        "rawText": "N09: 韩二 > 周三",
+        "statedId": true,
+        "rawPreferences": [
+          "韩二",
+          "周三"
+        ],
+        "preferences": [
+          "c2",
+          "c3"
+        ],
+        "normalizedPreferences": [
+          "c2",
+          "c3"
+        ],
+        "duplicateRefs": [],
+        "unknownRefs": [],
+        "duplicateInvalidated": false,
+        "valid": true,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      },
+      {
+        "id": "N10",
+        "row": 10,
+        "lineNo": 10,
+        "rawText": "N10: 周三 > 沈一",
+        "statedId": true,
+        "rawPreferences": [
+          "周三",
+          "沈一"
+        ],
+        "preferences": [
+          "c3",
+          "c1"
+        ],
+        "normalizedPreferences": [
+          "c3",
+          "c1"
+        ],
+        "duplicateRefs": [],
+        "unknownRefs": [],
+        "duplicateInvalidated": false,
+        "valid": true,
+        "status": "active",
+        "disputed": false,
+        "disputeReason": "",
+        "rescindReason": "",
+        "statusUpdatedAt": null
+      }
+    ],
+    "duplicatePreference": "first",
+    "tiePolicy": "candidate-order",
+    "tieSeed": "audit-seed-2026",
+    "tieBreakOrder": [
+      "c1",
+      "c2",
+      "c3"
+    ],
+    "ballotOrder": "input",
+    "orderSeed": "ballot-order",
+    "createdAt": null
+  },
+  "draft": {
+    "title": "样例 C：无有效偏好与耗尽票",
+    "seats": 2,
+    "candidateText": "沈一\n韩二\n周三",
+    "ballotText": "N01:\nN02: .\nN03: 火星 > 虚空\nN04: 空白 > 无效候选\nN05: 沈一 > 韩二\nN06: 沈一 > 韩二\nN07: 韩二 > 沈一\nN08: 韩二 > 沈一\nN09: 韩二 > 周三\nN10: 周三 > 沈一",
+    "duplicatePreference": "first",
+    "tiePolicy": "candidate-order",
+    "tieSeed": "audit-seed-2026",
+    "ballotOrder": "input",
+    "orderSeed": "ballot-order",
+    "statusById": {}
+  },
+  "result": {
+    "engine": "batch-lot-exact-v1",
+    "algorithmVersion": "wig-stv-exact-v1",
+    "status": "complete",
+    "pendingTie": null,
+    "title": "样例 C：无有效偏好与耗尽票",
+    "seats": 2,
+    "quota": {
+      "$f": "3"
+    },
+    "formalValue": 6,
+    "totalCounted": 10,
+    "counts": {
+      "ballots": 10,
+      "activeBallots": 10,
+      "rescindedBallots": 0,
+      "formalBallots": 6,
+      "noValidBallots": 4
+    },
+    "candidateIds": [
+      "c1",
+      "c2",
+      "c3"
+    ],
+    "candidates": [
+      {
+        "id": "c1",
+        "name": "沈一",
+        "lineNo": 1
+      },
+      {
+        "id": "c2",
+        "name": "韩二",
+        "lineNo": 2
+      },
+      {
+        "id": "c3",
+        "name": "周三",
+        "lineNo": 3
+      }
+    ],
+    "electedIds": [
+      "c2",
+      "c1"
+    ],
+    "eliminatedIds": [
+      "c3"
+    ],
+    "finalTallies": {
+      "c1": {
+        "$f": "3"
+      },
+      "c2": {
+        "$f": "3"
+      },
+      "c3": {
+        "$f": "0"
+      }
+    },
+    "exhausted": {
+      "$f": "4"
+    },
+    "finalConservation": {
+      "totalCounted": {
+        "$f": "10"
+      },
+      "candidateHeld": {
+        "$f": "6"
+      },
+      "exhausted": {
+        "$f": "4"
+      },
+      "heldPlusExhausted": {
+        "$f": "10"
+      },
+      "balanced": true,
+      "discrepancy": {
+        "$f": "0"
+      },
+      "rescindedValue": {
+        "$f": "0"
+      },
+      "originalTotal": {
+        "$f": "10"
+      },
+      "fullSum": {
+        "$f": "10"
+      },
+      "fullBalanced": true
+    },
+    "rounds": [
+      {
+        "index": 1,
+        "kind": "election",
+        "title": "韩二 达到精确 Droop 配额并当选",
+        "tallies": {
+          "c1": {
+            "$f": "2"
+          },
+          "c2": {
+            "$f": "3"
+          },
+          "c3": {
+            "$f": "1"
+          }
+        },
+        "postTallies": {
+          "c1": {
+            "$f": "2"
+          },
+          "c2": {
+            "$f": "3"
+          },
+          "c3": {
+            "$f": "1"
+          }
+        },
+        "quota": {
+          "$f": "3"
+        },
+        "statusById": {
+          "c1": "continuing",
+          "c2": "elected",
+          "c3": "continuing"
+        },
+        "continuingIds": [
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "remainingSeats": 2,
+        "electedThisRound": [
+          "c2"
+        ],
+        "eliminatedThisRound": [],
+        "tie": null,
+        "resolution": null,
+        "batches": [
+          {
+            "id": "r1-surplus-c2",
+            "round": 1,
+            "type": "surplus-transfer",
+            "candidateId": "c2",
+            "totalVotes": {
+              "$f": "3"
+            },
+            "quota": {
+              "$f": "3"
+            },
+            "surplus": {
+              "$f": "0"
+            },
+            "ratio": {
+              "$f": "0"
+            },
+            "flowIds": [],
+            "amountTransferred": {
+              "$f": "0"
+            },
+            "amountExhausted": {
+              "$f": "0"
+            }
+          }
+        ],
+        "flowIds": [],
+        "conservationBefore": {
+          "totalCounted": {
+            "$f": "10"
+          },
+          "candidateHeld": {
+            "$f": "6"
+          },
+          "exhausted": {
+            "$f": "4"
+          },
+          "heldPlusExhausted": {
+            "$f": "10"
+          },
+          "balanced": true,
+          "discrepancy": {
+            "$f": "0"
+          },
+          "rescindedValue": {
+            "$f": "0"
+          },
+          "originalTotal": {
+            "$f": "10"
+          },
+          "fullSum": {
+            "$f": "10"
+          },
+          "fullBalanced": true
+        },
+        "conservation": {
+          "totalCounted": {
+            "$f": "10"
+          },
+          "candidateHeld": {
+            "$f": "6"
+          },
+          "exhausted": {
+            "$f": "4"
+          },
+          "heldPlusExhausted": {
+            "$f": "10"
+          },
+          "balanced": true,
+          "discrepancy": {
+            "$f": "0"
+          },
+          "rescindedValue": {
+            "$f": "0"
+          },
+          "originalTotal": {
+            "$f": "10"
+          },
+          "fullSum": {
+            "$f": "10"
+          },
+          "fullBalanced": true
+        },
+        "processingOrder": [
+          "N01",
+          "N02",
+          "N03",
+          "N04",
+          "N05",
+          "N06",
+          "N07",
+          "N08",
+          "N09",
+          "N10"
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "elimination",
+        "title": "淘汰 周三，全部票值按精确分数转移",
+        "tallies": {
+          "c1": {
+            "$f": "2"
+          },
+          "c2": {
+            "$f": "3"
+          },
+          "c3": {
+            "$f": "1"
+          }
+        },
+        "postTallies": {
+          "c1": {
+            "$f": "3"
+          },
+          "c2": {
+            "$f": "3"
+          },
+          "c3": {
+            "$f": "0"
+          }
+        },
+        "quota": {
+          "$f": "3"
+        },
+        "statusById": {
+          "c1": "continuing",
+          "c2": "elected",
+          "c3": "eliminated"
+        },
+        "continuingIds": [
+          "c1",
+          "c3"
+        ],
+        "remainingSeats": 1,
+        "electedThisRound": [],
+        "eliminatedThisRound": [
+          "c3"
+        ],
+        "tie": {
+          "key": "r2-elimination-minimum-c3",
+          "round": 2,
+          "kind": "elimination-minimum",
+          "kindLabel": "最低票淘汰并列",
+          "tiedIds": [
+            "c3"
+          ],
+          "tieValue": {
+            "$f": "1"
+          },
+          "chooseCount": 1,
+          "options": [
+            "c3"
+          ],
+          "resolution": "resolved",
+          "resolvedBy": "candidate-order",
+          "selectedId": "c3"
+        },
+        "resolution": {
+          "tie": {
+            "key": "r2-elimination-minimum-c3",
+            "round": 2,
+            "kind": "elimination-minimum",
+            "kindLabel": "最低票淘汰并列",
+            "tiedIds": [
+              "c3"
+            ],
+            "tieValue": {
+              "$f": "1"
+            },
+            "chooseCount": 1,
+            "options": [
+              "c3"
+            ],
+            "resolution": "resolved",
+            "resolvedBy": "candidate-order",
+            "selectedId": "c3"
+          },
+          "status": "resolved",
+          "selectedId": "c3",
+          "selectedIds": [
+            "c3"
+          ],
+          "resolvedBy": "candidate-order"
+        },
+        "batches": [
+          {
+            "id": "r2-elimination-c3",
+            "round": 2,
+            "type": "elimination-transfer",
+            "candidateId": "c3",
+            "totalVotes": {
+              "$f": "1"
+            },
+            "quota": {
+              "$f": "3"
+            },
+            "surplus": null,
+            "ratio": {
+              "$f": "1"
+            },
+            "flowIds": [
+              "r2-flow-5"
+            ],
+            "amountTransferred": {
+              "$f": "1"
+            },
+            "amountExhausted": {
+              "$f": "0"
+            }
+          }
+        ],
+        "flowIds": [
+          "r2-flow-5"
+        ],
+        "conservationBefore": {
+          "totalCounted": {
+            "$f": "10"
+          },
+          "candidateHeld": {
+            "$f": "6"
+          },
+          "exhausted": {
+            "$f": "4"
+          },
+          "heldPlusExhausted": {
+            "$f": "10"
+          },
+          "balanced": true,
+          "discrepancy": {
+            "$f": "0"
+          },
+          "rescindedValue": {
+            "$f": "0"
+          },
+          "originalTotal": {
+            "$f": "10"
+          },
+          "fullSum": {
+            "$f": "10"
+          },
+          "fullBalanced": true
+        },
+        "conservation": {
+          "totalCounted": {
+            "$f": "10"
+          },
+          "candidateHeld": {
+            "$f": "6"
+          },
+          "exhausted": {
+            "$f": "4"
+          },
+          "heldPlusExhausted": {
+            "$f": "10"
+          },
+          "balanced": true,
+          "discrepancy": {
+            "$f": "0"
+          },
+          "rescindedValue": {
+            "$f": "0"
+          },
+          "originalTotal": {
+            "$f": "10"
+          },
+          "fullSum": {
+            "$f": "10"
+          },
+          "fullBalanced": true
+        }
+      },
+      {
+        "index": 3,
+        "kind": "acclamation",
+        "title": "继续候选人数不超过剩余席位，全体当选",
+        "tallies": {
+          "c1": {
+            "$f": "3"
+          },
+          "c2": {
+            "$f": "3"
+          },
+          "c3": {
+            "$f": "0"
+          }
+        },
+        "postTallies": {
+          "c1": {
+            "$f": "3"
+          },
+          "c2": {
+            "$f": "3"
+          },
+          "c3": {
+            "$f": "0"
+          }
+        },
+        "quota": {
+          "$f": "3"
+        },
+        "statusById": {
+          "c1": "elected",
+          "c2": "elected",
+          "c3": "eliminated"
+        },
+        "continuingIds": [
+          "c1"
+        ],
+        "remainingSeats": 1,
+        "electedThisRound": [
+          "c1"
+        ],
+        "eliminatedThisRound": [],
+        "tie": null,
+        "resolution": null,
+        "batches": [],
+        "flowIds": [],
+        "conservationBefore": {
+          "totalCounted": {
+            "$f": "10"
+          },
+          "candidateHeld": {
+            "$f": "6"
+          },
+          "exhausted": {
+            "$f": "4"
+          },
+          "heldPlusExhausted": {
+            "$f": "10"
+          },
+          "balanced": true,
+          "discrepancy": {
+            "$f": "0"
+          },
+          "rescindedValue": {
+            "$f": "0"
+          },
+          "originalTotal": {
+            "$f": "10"
+          },
+          "fullSum": {
+            "$f": "10"
+          },
+          "fullBalanced": true
+        },
+        "conservation": {
+          "totalCounted": {
+            "$f": "10"
+          },
+          "candidateHeld": {
+            "$f": "6"
+          },
+          "exhausted": {
+            "$f": "4"
+          },
+          "heldPlusExhausted": {
+            "$f": "10"
+          },
+          "balanced": true,
+          "discrepancy": {
+            "$f": "0"
+          },
+          "rescindedValue": {
+            "$f": "0"
+          },
+          "originalTotal": {
+            "$f": "10"
+          },
+          "fullSum": {
+            "$f": "10"
+          },
+          "fullBalanced": true
+        }
+      }
+    ],
+    "flows": [
+      {
+        "id": "r1-flow-1",
+        "round": 1,
+        "kind": "initial",
+        "sourceBatchId": "batch-initial",
+        "fromCandidateId": null,
+        "toCandidateId": null,
+        "exhausted": true,
+        "ratio": {
+          "$f": "1"
+        },
+        "amount": {
+          "$f": "4"
+        },
+        "entryCount": 4,
+        "entries": [
+          {
+            "ballotId": "N01",
+            "sourceLotId": null,
+            "childLotId": null,
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": null
+          },
+          {
+            "ballotId": "N02",
+            "sourceLotId": null,
+            "childLotId": null,
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": null
+          },
+          {
+            "ballotId": "N03",
+            "sourceLotId": null,
+            "childLotId": null,
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": null
+          },
+          {
+            "ballotId": "N04",
+            "sourceLotId": null,
+            "childLotId": null,
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": null
+          }
+        ]
+      },
+      {
+        "id": "r1-flow-2",
+        "round": 1,
+        "kind": "initial",
+        "sourceBatchId": "batch-initial",
+        "fromCandidateId": null,
+        "toCandidateId": "c1",
+        "exhausted": false,
+        "ratio": {
+          "$f": "1"
+        },
+        "amount": {
+          "$f": "2"
+        },
+        "entryCount": 2,
+        "entries": [
+          {
+            "ballotId": "N05",
+            "sourceLotId": null,
+            "childLotId": "lot-N05-1",
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": "c1"
+          },
+          {
+            "ballotId": "N06",
+            "sourceLotId": null,
+            "childLotId": "lot-N06-2",
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": "c1"
+          }
+        ]
+      },
+      {
+        "id": "r1-flow-3",
+        "round": 1,
+        "kind": "initial",
+        "sourceBatchId": "batch-initial",
+        "fromCandidateId": null,
+        "toCandidateId": "c2",
+        "exhausted": false,
+        "ratio": {
+          "$f": "1"
+        },
+        "amount": {
+          "$f": "3"
+        },
+        "entryCount": 3,
+        "entries": [
+          {
+            "ballotId": "N07",
+            "sourceLotId": null,
+            "childLotId": "lot-N07-3",
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": "c2"
+          },
+          {
+            "ballotId": "N08",
+            "sourceLotId": null,
+            "childLotId": "lot-N08-4",
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": "c2"
+          },
+          {
+            "ballotId": "N09",
+            "sourceLotId": null,
+            "childLotId": "lot-N09-5",
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": "c2"
+          }
+        ]
+      },
+      {
+        "id": "r1-flow-4",
+        "round": 1,
+        "kind": "initial",
+        "sourceBatchId": "batch-initial",
+        "fromCandidateId": null,
+        "toCandidateId": "c3",
+        "exhausted": false,
+        "ratio": {
+          "$f": "1"
+        },
+        "amount": {
+          "$f": "1"
+        },
+        "entryCount": 1,
+        "entries": [
+          {
+            "ballotId": "N10",
+            "sourceLotId": null,
+            "childLotId": "lot-N10-6",
+            "amount": {
+              "$f": "1"
+            },
+            "targetCandidateId": "c3"
+          }
+        ]
+      },
+      {
+        "id": "r2-flow-5",
+        "round": 2,
+        "kind": "elimination",
+        "sourceBatchId": "r2-elimination-c3",
+        "fromCandidateId": "c3",
+        "toCandidateId": "c1",
+        "exhausted": false,
+        "ratio": {
+          "$f": "1"
+        },
+        "amount": {
+          "$f": "1"
+        },
+        "entryCount": 1,
+        "entries": [
+          {
+            "ballotId": "N10",
+            "sourceLotId": "lot-N10-6",
+            "childLotId": "lot-N10-7",
+            "sourceValueBefore": {
+              "$f": "1"
+            },
+            "amount": {
+              "$f": "1"
+            },
+            "retainedAmount": {
+              "$f": "0"
+            },
+            "targetCandidateId": "c1"
+          }
+        ]
+      }
+    ],
+    "initialBatch": {
+      "id": "batch-initial",
+      "round": 1,
+      "type": "initial-distribution",
+      "candidateId": null,
+      "totalVotes": {
+        "$f": "10"
+      },
+      "quota": null,
+      "surplus": null,
+      "ratio": {
+        "$f": "1"
+      },
+      "flowIds": [
+        "r1-flow-1",
+        "r1-flow-2",
+        "r1-flow-3",
+        "r1-flow-4"
+      ],
+      "amountTransferred": {
+        "$f": "0"
+      },
+      "amountExhausted": {
+        "$f": "4"
+      }
+    },
+    "lots": [
+      {
+        "id": "lot-N05-1",
+        "ballotId": "N05",
+        "candidateId": "c1",
+        "value": {
+          "$f": "1"
+        },
+        "parentLotId": null,
+        "depth": 0,
+        "exhausted": false
+      },
+      {
+        "id": "lot-N06-2",
+        "ballotId": "N06",
+        "candidateId": "c1",
+        "value": {
+          "$f": "1"
+        },
+        "parentLotId": null,
+        "depth": 0,
+        "exhausted": false
+      },
+      {
+        "id": "lot-N07-3",
+        "ballotId": "N07",
+        "candidateId": "c2",
+        "value": {
+          "$f": "1"
+        },
+        "parentLotId": null,
+        "depth": 0,
+        "exhausted": false
+      },
+      {
+        "id": "lot-N08-4",
+        "ballotId": "N08",
+        "candidateId": "c2",
+        "value": {
+          "$f": "1"
+        },
+        "parentLotId": null,
+        "depth": 0,
+        "exhausted": false
+      },
+      {
+        "id": "lot-N09-5",
+        "ballotId": "N09",
+        "candidateId": "c2",
+        "value": {
+          "$f": "1"
+        },
+        "parentLotId": null,
+        "depth": 0,
+        "exhausted": false
+      },
+      {
+        "id": "lot-N10-6",
+        "ballotId": "N10",
+        "candidateId": "c3",
+        "value": {
+          "$f": "0"
+        },
+        "parentLotId": null,
+        "depth": 0,
+        "exhausted": false
+      },
+      {
+        "id": "lot-N10-7",
+        "ballotId": "N10",
+        "candidateId": "c1",
+        "value": {
+          "$f": "1"
+        },
+        "parentLotId": "lot-N10-6",
+        "depth": 1,
+        "exhausted": false
+      }
+    ],
+    "processingOrder": [
+      "N01",
+      "N02",
+      "N03",
+      "N04",
+      "N05",
+      "N06",
+      "N07",
+      "N08",
+      "N09",
+      "N10"
+    ],
+    "decisions": {},
+    "tiePolicy": "candidate-order",
+    "ballotOrder": "input"
+  }
+}

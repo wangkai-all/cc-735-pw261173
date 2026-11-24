@@ -1,0 +1,10 @@
+﻿round,round_kind,candidate_id,candidate_name,status_at_round_end,tally_start_exact,tally_end_exact,elected_this_round,eliminated_this_round,quota_exact,candidate_held,exhausted,total_counted,conservation_balanced,tie_key,tie_selected
+1,election,c1,沈一,continuing,2,2,,,3,6,4,10,yes,,
+1,election,c2,韩二,elected,3,3,yes,,3,6,4,10,yes,,
+1,election,c3,周三,continuing,1,1,,,3,6,4,10,yes,,
+2,elimination,c1,沈一,continuing,2,3,,,3,6,4,10,yes,r2-elimination-minimum-c3,c3
+2,elimination,c2,韩二,elected,3,3,,,3,6,4,10,yes,r2-elimination-minimum-c3,c3
+2,elimination,c3,周三,eliminated,1,0,,yes,3,6,4,10,yes,r2-elimination-minimum-c3,c3
+3,acclamation,c1,沈一,elected,3,3,yes,,3,6,4,10,yes,,
+3,acclamation,c2,韩二,elected,3,3,,,3,6,4,10,yes,,
+3,acclamation,c3,周三,eliminated,0,0,,,3,6,4,10,yes,,

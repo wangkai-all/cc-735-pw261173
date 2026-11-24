@@ -1,0 +1,221 @@
+﻿round,flow_id,kind,from_id,from_name,to_id,to_name,ratio_exact,flow_amount_exact,ballot_id,entry_amount_exact,raw_preferences,effective_preference_ids
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S001,1,S001: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S002,1,S002: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S003,1,S003: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S004,1,S004: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S005,1,S005: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S006,1,S006: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S007,1,S007: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S008,1,S008: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S009,1,S009: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S010,1,S010: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S011,1,S011: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S012,1,S012: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S013,1,S013: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S014,1,S014: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-1,initial,,EXHAUSTED,c1,甲,1,15,S015,1,S015: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-2,initial,,EXHAUSTED,c2,乙,1,9,S016,1,S016: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+1,r1-flow-2,initial,,EXHAUSTED,c2,乙,1,9,S017,1,S017: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+1,r1-flow-2,initial,,EXHAUSTED,c2,乙,1,9,S018,1,S018: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+1,r1-flow-2,initial,,EXHAUSTED,c2,乙,1,9,S019,1,S019: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+1,r1-flow-2,initial,,EXHAUSTED,c2,乙,1,9,S020,1,S020: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+1,r1-flow-2,initial,,EXHAUSTED,c2,乙,1,9,S021,1,S021: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+1,r1-flow-2,initial,,EXHAUSTED,c2,乙,1,9,S022,1,S022: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+1,r1-flow-2,initial,,EXHAUSTED,c2,乙,1,9,S023,1,S023: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+1,r1-flow-2,initial,,EXHAUSTED,c2,乙,1,9,S024,1,S024: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+1,r1-flow-3,initial,,EXHAUSTED,c3,丙,1,9,S025,1,S025: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+1,r1-flow-3,initial,,EXHAUSTED,c3,丙,1,9,S026,1,S026: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+1,r1-flow-3,initial,,EXHAUSTED,c3,丙,1,9,S027,1,S027: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+1,r1-flow-3,initial,,EXHAUSTED,c3,丙,1,9,S028,1,S028: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+1,r1-flow-3,initial,,EXHAUSTED,c3,丙,1,9,S029,1,S029: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+1,r1-flow-3,initial,,EXHAUSTED,c3,丙,1,9,S030,1,S030: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+1,r1-flow-3,initial,,EXHAUSTED,c3,丙,1,9,S031,1,S031: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+1,r1-flow-3,initial,,EXHAUSTED,c3,丙,1,9,S032,1,S032: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+1,r1-flow-3,initial,,EXHAUSTED,c3,丙,1,9,S033,1,S033: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+1,r1-flow-4,initial,,EXHAUSTED,c4,丁,1,9,S034,1,S034: 丁 > 戊 > 己,c4>c5>c6
+1,r1-flow-4,initial,,EXHAUSTED,c4,丁,1,9,S035,1,S035: 丁 > 戊 > 己,c4>c5>c6
+1,r1-flow-4,initial,,EXHAUSTED,c4,丁,1,9,S036,1,S036: 丁 > 戊 > 己,c4>c5>c6
+1,r1-flow-4,initial,,EXHAUSTED,c4,丁,1,9,S037,1,S037: 丁 > 戊 > 己,c4>c5>c6
+1,r1-flow-4,initial,,EXHAUSTED,c4,丁,1,9,S038,1,S038: 丁 > 戊 > 己,c4>c5>c6
+1,r1-flow-4,initial,,EXHAUSTED,c4,丁,1,9,S039,1,S039: 丁 > 戊 > 己,c4>c5>c6
+1,r1-flow-4,initial,,EXHAUSTED,c4,丁,1,9,S040,1,S040: 丁 > 戊 > 己,c4>c5>c6
+1,r1-flow-4,initial,,EXHAUSTED,c4,丁,1,9,S041,1,S041: 丁 > 戊 > 己,c4>c5>c6
+1,r1-flow-4,initial,,EXHAUSTED,c4,丁,1,9,S042,1,S042: 丁 > 戊 > 己,c4>c5>c6
+1,r1-flow-5,initial,,EXHAUSTED,c5,戊,1,9,S043,1,S043: 戊 > 己,c5>c6
+1,r1-flow-5,initial,,EXHAUSTED,c5,戊,1,9,S044,1,S044: 戊 > 己,c5>c6
+1,r1-flow-5,initial,,EXHAUSTED,c5,戊,1,9,S045,1,S045: 戊 > 己,c5>c6
+1,r1-flow-5,initial,,EXHAUSTED,c5,戊,1,9,S046,1,S046: 戊 > 己,c5>c6
+1,r1-flow-5,initial,,EXHAUSTED,c5,戊,1,9,S047,1,S047: 戊 > 己,c5>c6
+1,r1-flow-5,initial,,EXHAUSTED,c5,戊,1,9,S048,1,S048: 戊 > 己,c5>c6
+1,r1-flow-5,initial,,EXHAUSTED,c5,戊,1,9,S049,1,S049: 戊 > 己,c5>c6
+1,r1-flow-5,initial,,EXHAUSTED,c5,戊,1,9,S050,1,S050: 戊 > 己,c5>c6
+1,r1-flow-5,initial,,EXHAUSTED,c5,戊,1,9,S051,1,S051: 戊 > 己,c5>c6
+1,r1-flow-6,initial,,EXHAUSTED,c6,己,1,4,S052,1,S052: 己,c6
+1,r1-flow-6,initial,,EXHAUSTED,c6,己,1,4,S053,1,S053: 己,c6
+1,r1-flow-6,initial,,EXHAUSTED,c6,己,1,4,S054,1,S054: 己,c6
+1,r1-flow-6,initial,,EXHAUSTED,c6,己,1,4,S055,1,S055: 己,c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S001,1/3,S001: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S002,1/3,S002: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S003,1/3,S003: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S004,1/3,S004: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S005,1/3,S005: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S006,1/3,S006: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S007,1/3,S007: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S008,1/3,S008: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S009,1/3,S009: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S010,1/3,S010: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S011,1/3,S011: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S012,1/3,S012: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S013,1/3,S013: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S014,1/3,S014: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+1,r1-flow-7,surplus,c1,甲,c2,乙,1/3,5,S015,1/3,S015: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S016,2/7,S016: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S017,2/7,S017: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S018,2/7,S018: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S019,2/7,S019: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S020,2/7,S020: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S021,2/7,S021: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S022,2/7,S022: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S023,2/7,S023: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S024,2/7,S024: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S001,2/21,S001: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S002,2/21,S002: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S003,2/21,S003: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S004,2/21,S004: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S005,2/21,S005: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S006,2/21,S006: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S007,2/21,S007: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S008,2/21,S008: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S009,2/21,S009: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S010,2/21,S010: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S011,2/21,S011: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S012,2/21,S012: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S013,2/21,S013: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S014,2/21,S014: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+2,r2-flow-8,surplus,c2,乙,c3,丙,2/7,4,S015,2/21,S015: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S025,3/13,S025: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S026,3/13,S026: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S027,3/13,S027: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S028,3/13,S028: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S029,3/13,S029: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S030,3/13,S030: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S031,3/13,S031: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S032,3/13,S032: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S033,3/13,S033: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S016,6/91,S016: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S017,6/91,S017: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S018,6/91,S018: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S019,6/91,S019: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S020,6/91,S020: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S021,6/91,S021: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S022,6/91,S022: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S023,6/91,S023: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S024,6/91,S024: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S001,2/91,S001: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S002,2/91,S002: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S003,2/91,S003: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S004,2/91,S004: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S005,2/91,S005: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S006,2/91,S006: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S007,2/91,S007: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S008,2/91,S008: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S009,2/91,S009: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S010,2/91,S010: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S011,2/91,S011: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S012,2/91,S012: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S013,2/91,S013: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S014,2/91,S014: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+3,r3-flow-9,surplus,c3,丙,c4,丁,3/13,3,S015,2/91,S015: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S034,1/6,S034: 丁 > 戊 > 己,c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S035,1/6,S035: 丁 > 戊 > 己,c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S036,1/6,S036: 丁 > 戊 > 己,c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S037,1/6,S037: 丁 > 戊 > 己,c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S038,1/6,S038: 丁 > 戊 > 己,c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S039,1/6,S039: 丁 > 戊 > 己,c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S040,1/6,S040: 丁 > 戊 > 己,c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S041,1/6,S041: 丁 > 戊 > 己,c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S042,1/6,S042: 丁 > 戊 > 己,c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S025,1/26,S025: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S026,1/26,S026: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S027,1/26,S027: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S028,1/26,S028: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S029,1/26,S029: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S030,1/26,S030: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S031,1/26,S031: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S032,1/26,S032: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S033,1/26,S033: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S016,1/91,S016: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S017,1/91,S017: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S018,1/91,S018: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S019,1/91,S019: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S020,1/91,S020: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S021,1/91,S021: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S022,1/91,S022: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S023,1/91,S023: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S024,1/91,S024: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S001,1/273,S001: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S002,1/273,S002: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S003,1/273,S003: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S004,1/273,S004: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S005,1/273,S005: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S006,1/273,S006: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S007,1/273,S007: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S008,1/273,S008: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S009,1/273,S009: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S010,1/273,S010: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S011,1/273,S011: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S012,1/273,S012: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S013,1/273,S013: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S014,1/273,S014: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+4,r4-flow-10,surplus,c4,丁,c5,戊,1/6,2,S015,1/273,S015: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S043,1/11,S043: 戊 > 己,c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S044,1/11,S044: 戊 > 己,c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S045,1/11,S045: 戊 > 己,c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S046,1/11,S046: 戊 > 己,c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S047,1/11,S047: 戊 > 己,c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S048,1/11,S048: 戊 > 己,c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S049,1/11,S049: 戊 > 己,c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S050,1/11,S050: 戊 > 己,c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S051,1/11,S051: 戊 > 己,c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S034,1/66,S034: 丁 > 戊 > 己,c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S035,1/66,S035: 丁 > 戊 > 己,c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S036,1/66,S036: 丁 > 戊 > 己,c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S037,1/66,S037: 丁 > 戊 > 己,c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S038,1/66,S038: 丁 > 戊 > 己,c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S039,1/66,S039: 丁 > 戊 > 己,c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S040,1/66,S040: 丁 > 戊 > 己,c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S041,1/66,S041: 丁 > 戊 > 己,c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S042,1/66,S042: 丁 > 戊 > 己,c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S025,1/286,S025: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S026,1/286,S026: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S027,1/286,S027: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S028,1/286,S028: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S029,1/286,S029: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S030,1/286,S030: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S031,1/286,S031: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S032,1/286,S032: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S033,1/286,S033: 丙 > 丁 > 戊 > 己,c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S016,1/1001,S016: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S017,1/1001,S017: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S018,1/1001,S018: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S019,1/1001,S019: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S020,1/1001,S020: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S021,1/1001,S021: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S022,1/1001,S022: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S023,1/1001,S023: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S024,1/1001,S024: 乙 > 丙 > 丁 > 戊 > 己,c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S001,1/3003,S001: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S002,1/3003,S002: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S003,1/3003,S003: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S004,1/3003,S004: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S005,1/3003,S005: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S006,1/3003,S006: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S007,1/3003,S007: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S008,1/3003,S008: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S009,1/3003,S009: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S010,1/3003,S010: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S011,1/3003,S011: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S012,1/3003,S012: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S013,1/3003,S013: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S014,1/3003,S014: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
+5,r5-flow-11,surplus,c5,戊,c6,己,1/11,1,S015,1/3003,S015: 甲 > 乙 > 丙 > 丁 > 戊 > 己,c1>c2>c3>c4>c5>c6
